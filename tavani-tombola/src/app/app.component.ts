@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tavani-tombola';
+  estrai (){
+    var numero= Math.round(Math.random()*99+1);
+    console.log(numero);
+    return false;
+  }
 }

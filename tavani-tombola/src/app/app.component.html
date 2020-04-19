@@ -15,9 +15,11 @@
 
     <p><font color="red"><strong>Sono AppComponent</strong></font></p>
     <form >
+    <div class="form-group">
     <label for="exampleInputPassword1"><h3>Dimmi un numero</h3></label> <br>
     <label id="visuaNumero">Numero casuale</label><br>
-    <button id="bottone" type="submit" class="btn btn-warning" >Estrai</button>
+    </div>
+    <button id="bottone" type="submit" class="btn btn-warning" (click) = "estrai()">Estrai</button>
      </form>
 </div>
     <!-- Optional JavaScript -->

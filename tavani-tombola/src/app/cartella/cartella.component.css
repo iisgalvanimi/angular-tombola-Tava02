@@ -1,0 +1,5 @@
+label#ultimo, label#lista{
+  border: 3px orange solid;
+  background-color: #ff7f50;
+  width: 60px;
+}

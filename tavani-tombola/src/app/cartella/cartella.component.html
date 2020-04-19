@@ -11,18 +11,19 @@
     <title>Hello, world!</title>
   </head>
   <body>
-  <div align= "center">
+   <div align= "center">
 
-    <p><font color="red"><strong>Sono AppComponent</strong></font></p>
+    <p><font color="red"><strong>Sono il componente Cartella</strong></font></p>
     <form >
     <div class="form-group">
-    <label for="exampleInputPassword1"><h3>Dimmi un numero</h3></label> <br>
-    <label id="numero">Numero casuale</label><br>
+   <label>ultimo numero estratto</label><br>
+    <label id="ultimo">{{ultimo}}</label><br>
+     <label>lista numeri estratti</label><br>
+      <label id = "lista" *ngFor="let n of lista">{{n}}</label>
     </div>
-    <button id="bottone" type="submit" class="btn btn-warning" (click) = "estrai()">Estrai</button>
+
      </form>
 </div>
-<app-cartella [lista]="numeriUsciti" [ultimo]="ultimoNumero"></app-cartella>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
